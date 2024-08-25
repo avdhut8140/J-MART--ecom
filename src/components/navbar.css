@@ -1,0 +1,42 @@
+.buttons-mobile{
+    display: none;
+}
+.search-box{
+    outline: none;
+    border: none;
+    background: transparent;
+}
+.nav-right{
+    align-items: center;
+    gap: 5rem;
+}
+.search-btn{
+    background: transparent;
+}
+
+
+/* Small devices such as large phones (640px and up) */
+@media only screen and (max-width: 640px) {
+    .nav-right, .search-container, .search-box{
+        width: 100%;
+        /* border: 2px solid black; */
+    }
+    .nav-bar{
+        flex-direction: column;
+        gap: 10px;
+
+    }
+    .buttons{
+        display: none;
+    }
+    .buttons-mobile{
+        display: inline;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .nav-right{
+        width: 100%;
+    }
+    
+}

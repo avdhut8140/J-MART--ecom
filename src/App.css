@@ -1,0 +1,90 @@
+*{
+  margin: 0;
+  padding: 0;
+  
+}
+
+
+.slide, .slide-img{
+  height: 300px;
+}
+
+.a{
+  text-decoration: none;
+}
+
+.main-title{
+  font-weight: bold;
+  background: linear-gradient(to right, #0099f7, #f11712);;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.normal-font-size{
+  font-size: 18px;
+}
+.category{
+  list-style-type: none;
+}
+
+.card{
+  width: 25%;
+}
+.filter-products{
+  width: 25%;
+}
+.filter-symbol{
+  display: none;
+}
+
+
+
+
+
+/* slider------------- */
+
+/* Custom CSS for mobile view */
+
+@media (max-width: 550px) {
+  .single-product{
+    flex-direction: column;
+  }
+  .card{
+    width: 100%;
+    /* display: none; */
+  }
+  .filter-symbol{
+    display: block;
+  }
+  .filter-products{
+    display: none;
+  }
+  .pages{
+    flex-direction: column;
+    gap: 10px;
+  }
+  .filter-products-mobile{
+    /* display: none; */
+    z-index: 200;
+    position: absolute;
+    top: 25%;
+    width: 30%;
+    /* color: blac; */
+    background: whitesmoke;
+    backdrop-filter: blur(10px);
+    
+  }
+  
+.slide, .slide-img{
+  height: 200px;
+}
+ 
+}
+
+@media (max-width: 940px) {
+ 
+  .card{
+    width: 100%;
+    /* display: none; */
+  }
+}
